@@ -4,7 +4,7 @@
     ```
 
     ??? note "The text report looks like this"
-        ```shell
+        ```
 
         Experiment summary:
         *******************

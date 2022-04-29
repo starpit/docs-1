@@ -1,5 +1,14 @@
 ---
 template: main.html
+codeblocks:
+    - match: brew install iter8
+      validate: brew info iter8
+    - match: docker run .* httpbin
+      validate: docker ps | grep httpbin
+    - match: docker kill httpbin
+      validate: docker ps | grep httpbin && exit 1 || exit 0
+imports:
+    - docs/getting-started/install.md
 ---
 
 # Your First Experiment
@@ -8,10 +17,7 @@ Get started with your first [Iter8 experiment](concepts.md) by benchmarking an H
     
 ***
 
-## 1. Install Iter8 CLI
---8<-- "docs/getting-started/installiter8cli.md"
-
-## 2. Launch experiment
+## Launch experiment
 Use `iter8 launch` to benchmark the HTTP service whose URL is https://httpbin.org/get.
 
 ```shell
@@ -20,7 +26,7 @@ iter8 launch -c load-test-http --set url=https://httpbin.org/get --set numReques
 
 The `iter8 launch` command downloads [Iter8 experiment charts](concepts.md#experiment-chart), combines a specified chart (`load-test-http` in the above instance) with various parameter values (`url` and `numRequests` in the above instance), generates the `experiment.yaml` file, runs the experiment, and writes results into the `result.yaml` file.
 
-## 3. View experiment report
+## View experiment report
 --8<-- "docs/getting-started/expreport.md"
 
 
