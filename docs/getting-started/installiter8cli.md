@@ -2,6 +2,9 @@
     Install the latest stable release of the Iter8 CLI using `brew` as follows.
 
     ```shell
+    ---
+    validate: which iter8
+    ---
     brew tap iter8-tools/iter8
     brew install iter8@0.10
     ```
@@ -11,6 +14,9 @@
 
     === "darwin-amd64 (MacOS)"
         ```shell
+        ---
+        validate: which iter8
+        ---
         wget https://github.com/iter8-tools/iter8/releases/latest/download/iter8-darwin-amd64.tar.gz
         tar -xvf iter8-darwin-amd64.tar.gz
         ```
@@ -18,6 +24,9 @@
 
     === "linux-amd64"
         ```shell
+        ---
+        validate: which iter8
+        ---
         wget https://github.com/iter8-tools/iter8/releases/latest/download/iter8-linux-amd64.tar.gz
         tar -xvf iter8-linux-amd64.tar.gz
         ```
@@ -25,6 +34,9 @@
 
     === "linux-386"
         ```shell
+        ---
+        validate: which iter8
+        ---
         wget https://github.com/iter8-tools/iter8/releases/latest/download/iter8-linux-386.tar.gz
         tar -xvf iter8-linux-386.tar.gz
         ```
@@ -32,6 +44,9 @@
 
     === "windows-amd64"
         ```shell
+        ---
+        validate: which iter8
+        ---
         wget https://github.com/iter8-tools/iter8/releases/latest/download/iter8-windows-amd64.tar.gz
         tar -xvf iter8-windows-amd64.tar.gz
         ```
