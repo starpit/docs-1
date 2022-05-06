@@ -1,5 +1,8 @@
 ---
 template: main.html
+imports:
+    - https://raw.githubusercontent.com/guidebooks/store/main/guidebooks/docker/install.md
+    - docs/getting-started/install.md
 ---
 
 # Benchmark and Validate gRPC services
@@ -16,12 +19,8 @@ The `load-test-grpc` experiment generates call requests for gRPC services, colle
 
 ***
 
-???+ warning "Before you begin"
-    Run the gRPC sample service from a separate terminal.
-    ```shell
-    docker run -p 50051:50051 docker.io/grpc/java-example-hostname:latest
-    ```
-    You can also use [Podman](https://podman.io) or other alternatives to Docker in the above command.
+--8<-- "docs/tutorials/load-test-grpc/choose-app.md"
+
 ***
 
 ## Basic example
