@@ -8,8 +8,8 @@ codeblocks:
     - match: docker kill httpbin
       validate: docker ps | grep httpbin && exit 1 || exit 0
 imports:
-    - https://raw.githubusercontent.com/guidebooks/store/main/guidebooks/docker/install.md
-    - docs/getting-started/install.md
+    - docker/install
+    - ../../getting-started/install.md
 ---
 
 # Benchmark and Validate HTTP services
@@ -22,11 +22,11 @@ The `load-test-http` [Iter8](https://iter8.tools/) experiment generates requests
 
 ***
 
---8<-- "docs/tutorials/load-test-http/usecases.md"
+--8<-- "./usecases.md"
 
 ***
 
---8<-- "docs/tutorials/load-test-http/choose-app.md
+--8<-- "./choose-app.md
 
 ***
 
@@ -78,13 +78,13 @@ We are now ready to benchmark an HTTP service with a GET endpoint by specifying 
 
 ## View experiment report
 
---8<-- "docs/tutorials/load-test-http/expreport.md"
+--8<-- "./expreport.md"
 
 ***
 
 ## Use Iter8 Assertions to Enforce your SLOs
 
---8<-- "docs/tutorials/load-test-http/assert.md"
+--8<-- "./assert.md"
 
 
 ***

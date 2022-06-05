@@ -7,4 +7,4 @@ hide:
 
 # Install Iter8 CLI
 
---8<-- "docs/getting-started/installiter8cli.md"
+--8<-- "./installiter8cli.md"
